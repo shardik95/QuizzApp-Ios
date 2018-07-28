@@ -59,11 +59,11 @@ class ViewController: UIViewController {
     func checkAnswer() {
         let correctAns = allQuestions.list[questionNumber].answer;
         if(correctAns == pressed){
-            print("Correct");
+            ProgressHUD.showSuccess("Correct");
             score += 1;
         }
         else{
-            print("Incorrect");
+            ProgressHUD.showError("Incorrect");
         }
     }
     
